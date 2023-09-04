@@ -29,8 +29,8 @@ resource "aws_network_interface_sg_attachment" "private_intf_attachment" {
 }
 
 resource "aws_instance" "fgt" {
-  ami           = var.fgt_ami
-  instance_type = var.size
+  ami               = var.fgt_ami
+  instance_type     = var.size
   availability_zone = var.az
   user_data = templatefile("${var.bootstrap-fgt}", {
     type               = "${var.license_type}"

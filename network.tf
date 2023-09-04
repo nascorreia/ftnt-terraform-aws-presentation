@@ -1,7 +1,7 @@
 // Create AWS VPC
 resource "aws_vpc" "myvpc" {
   cidr_block = var.vpc_cidr
-  // tags       = local.tags.vpc
+  tags       = local.vpc
 }
 
 resource "aws_internet_gateway" "igw" {
