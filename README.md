@@ -1,5 +1,11 @@
 # fgt-terraform-aws-presentation
 A step-by-step guide to deploy and configure a FGT and all its cloud infrastructure on AWS
+This will go hand-in-hand with:
+
+- `Remote state backend repo` : https://github.com/nascorreia/ftnt-terraform-aws-presentation-infra-backend
+- `FortiOS configuration` : https://github.com/nascorreia/ftnt-terraform-aws-presentation-fortios
+
+----
 
 The following steps will create this simple infrastructure:
 
@@ -7,12 +13,11 @@ The following steps will create this simple infrastructure:
 
 ## Follow the following branch path:
 
-1. create_vpc - Create the VPC resources
-2. create_subnets - Create the public and private subnets
-3. create_routing - Create routing resources
-4. create_instances - Creation of FGT instance and all necessary resources
-5. create_outputs - Create the output.tf file and print some outputs
-6. create_s3 - Create an S3 bucket to hold the remote state
-7. create_remote_backend - Initialize the remote backend. The local state is (optionally) copied to the remote backend. The state now can be used in other configurations
-8. configure_fortios_provider - Create the FortiOS provider config and remote state
-9. create_firewall_policy - Create a firewall policy
+1. Branch create_vpc - Create the VPC resources
+2. Branch create_subnets - Create the public and private subnets
+3. Branch create_routing - Create routing resources
+4. Branch create_instances - Creation of FGT instance and all necessary resources
+5. Branch create_outputs - Create the output.tf file and print some outputs
+6. On repo ftnt-terraform-aws-presentation-infra-backend - Create the S3 bucket for remote state
+7. Branch create_remote_backend - Initialize the remote backend. The local state is (optionally) copied to the remote backend. The state now can be used in other configurations
+8. On repo ftnt-terraform-aws-presentation-fortios - Configure FortiOS 
