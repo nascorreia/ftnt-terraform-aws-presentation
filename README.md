@@ -9,7 +9,7 @@ This will go hand-in-hand with:
 
 The following steps will create this simple infrastructure:
 
-![](https://github.com/nascorreia/ftnt-terraform-aws-presentation/blob/267475f7ba3dd54582d1244be5eb825f4f83c403/AWS-Terraform-Presentation.drawio.png)
+![](https://github.com/nascorreia/ftnt-terraform-aws-presentation-infra/blob/main/AWS-Terraform-Presentation.drawio.png)
 
 ## Follow the following branch path:
 
