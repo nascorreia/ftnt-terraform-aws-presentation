@@ -2,8 +2,8 @@ locals {
   #Tags
 
   vpc = {
-      Name = "Demo VPC"
-    }
+    Name = "Demo VPC"
+  }
   tags = {
     rt_external_tags = {
       Name = "External Route Table"
