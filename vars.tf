@@ -22,7 +22,8 @@ variable "subnets" {
 variable "fgt_ami" {
   //ami for FGT 7.2.5 VM64 eu-west-1 region (Ireland) - Ideally this would be an object that would be updated to return the correct ami for a region/version/arch
   //The public FTNT repo has a great implementation for this. Simplifying here for demo 
-  default = "ami-089190cb9700b1ce1"
+  //default = "ami-089190cb9700b1ce1"
+  default = "ami-00ea4a34f55268925"
 }
 
 variable "size" {
